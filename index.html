@@ -1,0 +1,1451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Fiberam - Интернет магазин</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/fonts.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/owl.carousel.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/owl.transitions.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=latin-ext" rel="stylesheet">
+</head>
+
+<body>
+    <!-- WINDOW ENTER -->
+    <div id="bonus" class="modal">
+        <div class="modal-content">
+            <a href="#!" class="modal-close "></a>
+            <h4>СКИДКА!!!</h4>
+            <div class="timer"><span>07</span>:<span>15</span></div>
+            <p>Если вы оформите заказ в течении 20 минут, то получите дополнительную скидку</p>
+            <a href="#">Применить скидку</a>
+        </div>
+    </div>
+    <!-- WINDOW ENTER -->
+    <div id="enter" class="modal">
+        <a href="#!" class="modal-close"></a>
+        <div class="modal-content">
+            <h4>Войти</h4>
+            <ul class="tabsauth tabs">
+                <li class="tab col s3"><a href="#auth-enter" class="active">По почте</a></li>
+                <li class="tab col s3"><a href="#card-enter">По клубной карте</a></li>
+                <li class="tab col s3 "><a href="#phone-enter">По телефону</a></li>
+            </ul>
+            <div id="auth-enter" class="col s12">
+                <form>
+                    <input type="text" placeholder="Ваш ник или email" />
+                    <input type="password" />
+                    <div class="row"><label><input type="checkbox" />Запомнить меня</label></div>
+                    <input type="submit" value="ВОЙТИ" />
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Регистрация</a>
+                </form>
+            </div>
+            <div id="card-enter" class="col s12">
+                <form>
+                    <div class="phone-input">
+                        <input type="text" onkeyup="testJump(this);" maxlength="4" size="1">
+                        <input type="text" onkeyup="testJump(this);" maxlength="4" size="1">
+                        <input type="text" onkeyup="testJump(this);" maxlength="4" size="1">
+                        <input type="text" onkeyup="testJump(this);" maxlength="4" size="1">
+                    </div>
+                    <div class="row"><label><input type="checkbox" />Запомнить меня</label></div>
+                    <input type="submit" value="ВОЙТИ" />
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Регистрация</a>
+                </form>
+            </div>
+            <div id="phone-enter" class="col s12">
+                <form>
+                    <div class="phone-input">
+                        <input type="text" id="phone" placeholder="Ваш телефон"><input type="submit" value="ВОЙТИ" />
+                    </div>
+                    <div class="row">
+                        <p>на ваш телефон быдет выслан код, введите его ниже</p>
+                        <input id="phone" type="text" placeholder="_ _ _ _" />
+                    </div>
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Регистрация</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- GIFTS -->
+    <div id="city" class="modal ">
+        <div class="modal-content">
+            <a href="#!" class="modal-close "></a>
+            <div class="cite-select">
+                <p>Ваша страна </p>
+                <select>
+			<option>Россия</option>
+			<option>Беларусь</option>
+			<option>Украина</option>
+			<option>Казахстан</option>
+			<option>Киргизия</option>
+		</select>
+                <span>Выбрать другую</span>
+            </div>
+            <input type="text" class="search" placeholder="Поиск города">
+            <div class="city-result">
+                <div class="col">Москва</div>
+                <div class="col">Санкт-петербург</div>
+                <div class="col">Санкт-петербург</div>
+                <div class="col">Северо-Западный</div>
+                <div class="col">Брянск</div>
+                <div class="col">Воронеж</div>
+                <div class="col">Сочи</div>
+                <div class="col">Екатеренбург</div>
+                <div class="col">Краснодар</div>
+                <div class="col">Перьм</div>
+                <div class="col">Красноярск</div>
+                <div class="col">Самара</div>
+                <div class="col">Ростов </div>
+                <div class="col">Брянск</div>
+                <div class="col">Воронеж</div>
+                <div class="col">Сочи</div>
+                <div class="col">Екатеренбург</div>
+                <div class="col">Краснодар</div>
+                <div class="col">Перьм</div>
+                <div class="col">Красноярск</div>
+                <div class="col">Самара</div>
+                <div class="col">Ростов </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- ONE CLICK -->
+    <div id="one" class="modal enterto oneclick bas">
+        <div class="modal-content">
+            <a href="#!" class="modal-close "></a>
+            <div class="row-table">
+                <div>
+                    <div class="img-wrapper"><img src="img/buket4.jpg" /> </div>
+                    <p><strong> Nike Air Huracate</strong>Куртка утепленаня</p>
+                    <div class="mini-price">
+                        <p>1 500 р</p><span>1700 р</span></div>
+                    </p>
+                </div>
+            </div>
+            <form>
+                <input type="text" placeholder="Имя" />
+                <input type="text" placeholder="Телефон" />
+                <input type="text" placeholder="Адрес доставки" />
+                <textarea>Комментарий</textarea>
+                <input type="submit" class="submit" value="БЫСТРЫЙ ЗАКАЗ" />
+            </form>
+        </div>
+    </div>
+    <!-- WINDOW ADD TO BASKET-->
+    <div id="addb" class="modal bas">
+        <div class="modal-content">
+            <a href="#!" class="modal-close "></a>
+            <h4>Добавление в корзину</h4>
+            <div class="row-table">
+                <div>
+                    <div class="img-wrapper"><img src="img/buket4.jpg" /> </div>
+                    <p><strong> Nike Air Huracate</strong>Куртка утепленаня</p>
+                    <div class="mini-price">
+                        <p>1 500 р</p><span>1700 р</span></div>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row"><a href="#!" class="modal-close text-close">Продолжить покупки</a><a href="#" class="submit add btn ">В корзину</a></div>
+        </div>
+    </div>
+    <!-- WINDOW CALLME -->
+    <div id="call" class="modal call">
+        <div class="modal-content">
+            <a href="#!" class="modal-close "></a>
+            <div class="messenger">
+                <a href="#" class="viber"></a>
+                <a href="#" class="wp"></a>
+                <a href="#" class="telega"></a>
+                <a href="tel:+7 (495) 730-67-67" class="phone">+7 (495) 730-67-67</a>
+            </div>
+            <p>или </p>
+            <form>
+                <input type="text" placeholder="Ваш телефон" />
+                <span><input type="checkbox"/>Согласен с условиями  <a href="#">Публичной офферты</a> </span>
+                <input type="submit" class="submit" value="ПЕРЕЗВОНИТЬ" />
+            </form>
+        </div>
+    </div>
+    <!-- WINDOW CALLME -->
+    <div id="fav" class="modal call">
+        <div class="modal-content">
+            <a href="#!" class="modal-close "></a>
+            <h4>Добавить в избранное</h4>
+            <button class="btn grey modal-close">Нет </button>
+            <button class="btn blue modal-close">Да</button>
+        </div>
+    </div>
+    <!-- CALL WIDJET  -->
+    <a href="#call" class="modal-trigger callto"></a>
+    <!-- WINDOW PRESHOP -->
+    <div id="card" class="modal ">
+        <div class="modal-content item-card">
+            <a href="#!" class="modal-close "></a>
+            <div class="left-col">
+                <ul class="tabs pre-tabs">
+                    <li class="tab">
+                        <a class="active" href="#pre1"><img src="img/bigbuket.jpg" /></a>
+                    </li>
+                    <li class="tab">
+                        <a href="#pre2"><img src="img/bigbuket2.jpg" /></a>
+                    </li>
+                    <li class="tab gift">
+                        <a href="#pre4"><img src="img/gift-medvet.jpg" /></a>
+                    </li>
+                </ul>
+                <div class="preview">
+                    <div id="pre1"><img src="img/bigbuket.jpg" /></div>
+                    <div id="pre2"><img src="img/bigbuket2.jpg" /></div>
+                    <div id="pre4">
+                        <a href="#gifts" class="modal-trigger"><img src="img/gift-medvet.jpg" /></a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="right-col">
+                <div class="title"><strong>Monster Beat Mixr</strong><span>артикул 234985</span>
+                    <div class="pormo-gift">1000 р в подарок</div>
+                </div>
+                <div class="revies">
+                    <div class="star full"></div>
+                    <div class="star full"></div>
+                    <div class="star full"></div>
+                    <div class="star"></div>
+                    <div class="star"></div> 65 отзывов </div>
+                <div class="setting-product">
+                    <div class="colors-product">
+                        <div class="title-row">Цвет товара</div>
+                        <label>					
+						<input name="color" type="radio" checked />
+						<div class="color" style="background:#c62a52"></div>
+					</label>
+                        <label>
+						<input name="color" type="radio"  />
+						<div class="color" style="background:#9fff77"></div>
+					</label>
+                        <label>
+						<input name="color" type="radio"  />
+						<div class="color" style="background:#4a4d97"></div>
+					</label>
+                        <label>
+						<input name="color" type="radio" />
+						<div class="color" style="background:#9c358e"></div>
+					</label>
+                    </div>
+                    <div class="size-product">
+                        <div class="title-row">Размер <a href="#size" class="modal-trigger">Таблица размеров</a></div>
+                        <label>
+						<input name="size" type="radio" checked />
+						<span>36-37</span>
+					</label>
+                        <label>
+						<input name="size" type="radio" checked />
+						<span>38-39</span>
+					</label>
+                        <label>
+						<input name="size" type="radio" checked />
+						<span>40-41</span>
+					</label>
+                    </div>
+                </div>
+                <div class="info-product">
+                    <div class="row">
+                        <div class="price">
+                            <strong>12 500 р</strong>
+                            <span>13 500</span>
+                            <div class="sklad">в наличии на складе</div>
+                        </div>
+                        <div class="bonus">
+                            <div class="select_advert icon">
+                                <div>
+                                    <span>Товар учавствует в акции(ях)</span>
+                                    <select multiple>
+								  <option value="" selected>Выберите акцию</option>
+								  <option value="1">Скидка 3%</option>
+								  <option value="2">Кэшбэк на пластиковую карту 5%</option>
+								  <option value="3">Кэшбэк на клубную карту 15%</option>
+							</select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="club-card">
+                            <div class="round">10 500 р</div>
+                            <p>Покупка по клубной карте дает выгоду <span>12%</span> или <span>1244</span> руб</p>
+                            <a href="#"></a>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <div class="field">
+                            <button>-</button>
+                            <input type="numeric" value="2" />
+                            <button>+</button>
+                        </div>
+                        <a href="#addb" class="modal-trigger add submit btn">В корзину</a>
+                        <a href="#one" class="modal-trigger add btn">Быстрый заказ</a>
+                        <a href="#favor" class="modal-trigger favor btn icon"></a>
+                        <a href="#srav" class="modal-trigger add btn icon sravneny"></a>
+                    </div>
+                </div>
+
+                <div class="descript">
+                    <a href="#"><span>Продавец </span> Triumh MArket</a>
+                    <p>Новые AirPods в футляре с возможностью беспроводной зарядки – это сочетание тщательно продуманного дизайна, передовых технологий и кристально чистого звука. Благодаря новому чипу H1 от Apple эти наушники могут работать в режиме телефонного
+                        разговора до 3 часов без подзарядки.</p>
+                </div>
+                <a href="#" class="moredes">Больше описания</a>
+            </div>
+
+            <div class="see">
+                <h6>Товры дня</h6>
+                <div class="navigate">
+                    <a href="#" class="js-prev seelater-prev"></a>
+                    <a href="#" class="js-next seelater-next"></a>
+                </div>
+                <div class="seelater">
+                    <div class="carousel-element cardware">
+                        <a href="#" class="carwind">
+                            <div class="img-wrapper"><img src="img/buket5.jpg" /></div>
+                            <p>Глюкометр Infopia Auto-Coding Premium<span>+ 25 тест-полосок</span></p>
+                            <div class="pre-price">250 000 р <span>1500 р</span></div>
+                        </a>
+                    </div>
+                    <div class="carousel-element cardware">
+                        <a href="#" class="carwind">
+                            <div class="img-wrapper"><img src="img/buket2.jpg" /></div>
+                            <p>Глюкометр Infopia Auto-Coding Premium<span>+ 25 тест-полосок</span></p>
+                            <div class="pre-price">250 000 р <span>1500 р</span></div>
+                        </a>
+                    </div>
+                    <div class="carousel-element cardware">
+                        <a href="#" class="carwind">
+                            <div class="img-wrapper"><img src="img/buket3.jpg" /></div>
+                            <p>Глюкометр Infopia Auto-Coding Premium<span>+ 25 тест-полосок</span></p>
+                            <div class="pre-price">250 000 р <span>1500 р</span></div>
+                        </a>
+                    </div>
+                    <div class="carousel-element cardware">
+                        <a href="#" class="carwind">
+                            <div class="img-wrapper"><img src="img/buket4.jpg" /></div>
+                            <p>Глюкометр Infopia Auto-Coding Premium<span>+ 25 тест-полосок</span></p>
+                            <div class="pre-price">250 000 р <span>1500 р</span></div>
+                        </a>
+                    </div>
+                    <div class="carousel-element cardware">
+                        <a href="#" class="carwind">
+                            <div class="img-wrapper"><img src="img/buket1.jpg" /></div>
+                            <span>Букет в корзине цветы 31 шт. композиция корзина орхидеи микс в зелени 40 см</span>
+                            <div class="pre-price">250 000 р <span>1500 р</span></div>
+                        </a>
+                    </div>
+                    <div class="carousel-element cardware">
+                        <a href="#" class="carwind">
+                            <div class="img-wrapper"><img src="img/flower.jpg" /></div>
+                            <span>Георгины белые, ромашки в зелени. Букет георгинов в ромашках 51 шт.</span>
+                            <div class="pre-price">250 000 р <span>1500 р</span></div>
+                        </a>
+                    </div>
+                    <div class="carousel-element cardware">
+                        <a href="#" class="carwind">
+                            <div class="img-wrapper"><img src="img/flower.jpg" /></div>
+                            <p>Глюкометр Infopia Auto-Coding Premium<span>+ 25 тест-полосок</span></p>
+                            <div class="pre-price">250 000 р <span>1500 р</span></div>
+                        </a>
+                    </div>
+                    <div class="carousel-element cardware">
+                        <a href="#" class="carwind">
+                            <div class="img-wrapper"><img src="img/flower.jpg" /></div>
+                            <p>Глюкометр Infopia Auto-Coding Premium<span>+ 25 тест-полосок</span></p>
+                            <div class="pre-price">250 000 р <span>1500 р</span></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <!--- super_Block--->
+        <div class="superhead">
+            <div class="wrapper">
+                <a href="#" class="fg">
+                    <span><img src="img/mini-card.png" /><strong>Плати меньше!!!!</strong><p>Вступай в привелигерованый клуб и получайте скидку до <strong>10%</strong> на все товары <i>Кликай для регистрации</i></p></span>
+                </a>
+                <div class="ltr">
+                    <a href="#city" class="modal-trigger city-select icon">Россия, Москва</a>
+                </div>
+
+                <ul class="centrmenu">
+                    <li><a href="#">Что с моим заказом</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Оплата </a></li>
+                    <li><a href="#">Франшиза</a></li>
+
+                </ul>
+                <div class="rtr">
+                    <a href="#">Регистрация</a>
+                    <a href="#" class="cyanblack dropdown-trigger users" data-target='user-menu'>Вход</a>
+
+                    <ul id='user-menu' class='dropdown-content'>
+                        <div class="my">Alexsys <a href="#">Выйти</a></div>
+                        <li><a href="#!" class="icon trash">Корзина</a></li>
+                        <li><a href="#!" class="icon story">История заказов</a></li>
+                        <li><a href="#!" class="icon myfavor">Избранное</a></li>
+                        <li><a href="#!" class="icon setting">Редактировать профиль</a></li>
+                        <a href="#" class="policy">Пользовательское соглашение</a>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <!--- Search_Block--->
+        <div class="header">
+            <div class="wrapper">
+                <div class="logo">
+                    <a href="#"><img src="img/logo.png" /></a>
+                </div>
+                <div class="search">
+                    <form>
+                        <select>
+							<option>Все разделы</option>
+							<option>Промышленность</option>
+							<option>Стройматериалы</option>
+							<option>Вода, газ, тепло</option>
+							<option>Дом и сад</option>
+							<option>Одежда и обувь</option>
+							<option>Спорт и отдых</option>
+							<option>Здоровье и красота</option>
+							<option>Текстиль и кожа</option>
+							<option>Промышленность</option>
+							<option>Стройматериалы</option>
+							<option>Вода, газ, тепло</option>
+							<option>Дом и сад</option>
+							<option>Одежда и обувь</option>
+							<option>Спорт и отдых</option>
+							<option>Здоровье и красота</option>
+							<option>Текстиль и кожа</option>
+						</select>
+                        <div class="search-wrap">
+                            <input type="text" class="search-field" placeholder="Поиск в каталоге. Например - Роботы-полесосы" />
+                            <div class="search-result">
+                                <div class="res-row">Моторные масла <span>5345 товаров </span></div>
+                                <div class="res-row">Косметика по уходу за волосами<span>345 товаров </span></div>
+                                <div class="res-row">Лаки, пропитки, антисептики<span>245 товаров </span></div>
+                                <div class="res-row">Моторные масла <span>5345 товаров </span></div>
+                                <div class="res-row">Косметика по уходу за волосами<span>345 товаров </span></div>
+                                <div class="res-row">Лаки, пропитки, антисептики<span>245 товаров </span></div>
+                                <div class="res-row-top">
+                                    <div class="img-wrap"><img src="img/buket4.jpg"></div>
+                                    <div class="search-descript">Nike Air Huracate<span>Куртка утепленаня</span></div>
+                                    <div class="stars">
+                                        <div class="full-star icon"></div>
+                                        <div class="full-star icon"></div>
+                                        <div class="full-star icon"></div>
+                                        <div class="star icon"></div>61 отзыв </div>
+                                </div>
+                                <div class="res-row-top">
+                                    <div class="img-wrap"><img src="img/buket4.jpg"></div>
+                                    <div class="search-descript">Nike Air Huracate<span>Куртка утепленаня</span></div>
+                                    <div class="stars">
+                                        <div class="full-star icon"></div>
+                                        <div class="full-star icon"></div>
+                                        <div class="full-star icon"></div>
+                                        <div class="star icon"></div>61 отзыв </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <p class="b_phone">
+                    <a href="tel:+7 (800) 500-9108">+7 (800) 500-9108</a>
+                    <span>Телефон горячей линии</span>
+                </p>
+                <div class="account">
+                    <a href="#" class="favorit"><span>2</span></a>
+                    <div class="basket">
+                        <a class='dropdown-trigger' href='#' data-target='dropdown'>
+                            <p>2 товара <span> 135 000 руб</span></p>
+                        </a>
+                        <ul id='dropdown' class='dropdown-content'>
+                            <li><img src="img/flower.jpg" />
+                                <div class="basket-data">
+                                    <div class="mini-title">Алегро</div>
+                                    <div class="price">2500 <span>руб</span><strong>1 шт</strong></div>
+                                </div>
+                                <div class="fb-price">2 370 <strong>руб</strong><span>Цена для держателя клубной карты</span></div>
+                            </li>
+                            <li><img src="img/flower.jpg" />
+                                <div class="basket-data">
+                                    <div class="mini-title">Алегро</div>
+                                    <div class="price">2500 <span>руб</span><strong>1 шт</strong></div>
+                                </div>
+                                <div class="fb-price">2 370 <strong>руб</strong><span>Цена для держателя клубной карты</span></div>
+                            </li>
+                            <a href="#">Перейти в корзину</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--- Menu_Block--->
+        <div class="submenu">
+            <div class="wrapper">
+                <nav class="second-menu">
+                    <ul>
+                        <li><a href="#">ЛЕКАРТСВА    </a>
+
+                            <div class="wr">
+                                <div class="megamenu">
+                                    <div class="col">
+                                        <h5>Категории</h5>
+                                        <ul>
+                                            <li><a href="#">  Бронхиальная астма</a></li>
+                                            <li><a href="#">  Венотоники</a></li>
+                                            <li><a href="#"> Витамины</a></li>
+                                            <li><a href="#"> Дерматологические средства</a></li>
+                                            <li><a href="#"> Желудочно-кишечный тракт</a></li>
+                                            <li><a href="#"> Женское здоровье</a></li>
+                                            <li><a href="#"> Иммуномодуляторы</a></li>
+                                            <li><a href="#"> Инфекционно-воспалительные заболевания</a></li>
+                                            <li><a href="#"> Контроль, снижение веса</a></li>
+                                            <li><a href="#"> Мужское здоровье</a></li>
+                                            <li><a href="#">  Неврологические средства</a></li>
+                                            <li><a href="#">  Офтальмологические препараты</a></li>
+                                            <li><a href="#">  Препараты особого отпуска</a></li>
+                                            <li><a href="#">  Растворители</a></li>
+                                            <li><a href="#">  Аллергия</a></li>
+                                            <li><a href="#"> Антипаразитарные средства</a></li>
+                                            <li><a href="#">  Боль</a></li>
+                                            <li><a href="#"> Бронхиальная астма</a></li>
+                                            <li><a href="#">  Венотоники</a></li>
+                                            <li><a href="#"> Витамины</a></li>
+                                            <li><a href="#"> Дерматологические средства</a></li>
+                                            <li><a href="#"> Желудочно-кишечный тракт</a></li>
+                                            <li><a href="#"> Женское здоровье</a></li>
+                                            <li><a href="#"> Мужское здоровье</a></li>
+                                            <li><a href="#">  Неврологические средства</a></li>
+                                            <li><a href="#">  Офтальмологические препараты</a></li>
+                                            <li><a href="#">  Препараты особого отпуска</a></li>
+                                            <li><a href="#">  Растворители</a></li>
+                                            <li><a href="#">  Аллергия</a></li>
+                                            <li><a href="#"> Антипаразитарные средства</a></li>
+                                            <li><a href="#">  Боль</a></li>
+                                            <li><a href="#"> Бронхиальная астма</a></li>
+                                            <li><a href="#">  Венотоники</a></li>
+                                            <li><a href="#"> Витамины</a></li>
+                                            <li><a href="#"> Дерматологические средства</a></li>
+                                            <li><a href="#"> Желудочно-кишечный тракт</a></li>
+                                            <li><a href="#"> Женское здоровье</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <h5>Заболевания</h5>
+                                        <ul>
+                                            <li><a href="#">  Бронхиальная астма</a></li>
+                                            <li><a href="#">  Венотоники</a></li>
+                                            <li><a href="#"> Витамины</a></li>
+                                            <li><a href="#"> Дерматологические средства</a></li>
+                                            <li><a href="#"> Желудочно-кишечный тракт</a></li>
+                                            <li><a href="#"> Женское здоровье</a></li>
+                                            <li><a href="#"> Иммуномодуляторы</a></li>
+                                            <li><a href="#"> Инфекционно-воспалительные заболевания</a></li>
+                                            <li><a href="#"> Контроль, снижение веса</a></li>
+                                            <li><a href="#"> Мужское здоровье</a></li>
+                                            <li><a href="#">  Неврологические средства</a></li>
+                                            <li><a href="#">  Офтальмологические препараты</a></li>
+                                            <li><a href="#">  Препараты особого отпуска</a></li>
+                                            <li><a href="#">  Растворители</a></li>
+                                            <li><a href="#">  Аллергия</a></li>
+                                            <li><a href="#"> Антипаразитарные средства</a></li>
+                                            <li><a href="#">  Боль</a></li>
+                                            <li><a href="#"> Бронхиальная астма</a></li>
+                                            <li><a href="#">  Венотоники</a></li>
+                                            <li><a href="#"> Витамины</a></li>
+                                            <li><a href="#"> Дерматологические средства</a></li>
+                                            <li><a href="#"> Желудочно-кишечный тракт</a></li>
+                                            <li><a href="#"> Женское здоровье</a></li>
+                                            <li><a href="#"> Мужское здоровье</a></li>
+                                            <li><a href="#">  Неврологические средства</a></li>
+                                            <li><a href="#">  Офтальмологические препараты</a></li>
+                                            <li><a href="#">  Препараты особого отпуска</a></li>
+                                            <li><a href="#">  Растворители</a></li>
+                                            <li><a href="#">  Аллергия</a></li>
+                                            <li><a href="#"> Антипаразитарные средства</a></li>
+                                            <li><a href="#">  Боль</a></li>
+                                            <li><a href="#"> Бронхиальная астма</a></li>
+                                            <li><a href="#">  Венотоники</a></li>
+                                            <li><a href="#"> Витамины</a></li>
+                                            <li><a href="#"> Дерматологические средства</a></li>
+                                            <li><a href="#"> Желудочно-кишечный тракт</a></li>
+                                            <li><a href="#"> Женское здоровье</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <h5>Хиты продаж</h5>
+                                        <div class="bestproduct">
+                                            <div class="item">
+                                                <div class="itemimg"><img src="img/preimg.jpg" /> <span>хит</span></div>
+                                                <div class="title">
+                                                    <p>Колдрекс сироп 100 мл</p>
+
+                                                    <div class="reviwstar">
+                                                        <div class="star"></div>
+                                                        <div class="star"></div>
+                                                        <div class="star"></div>
+                                                    </div>
+                                                    <span>1 200 руб</span>
+
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="itemimg"><img src="img/preimg.jpg" /> <span>хит</span></div>
+                                                <div class="title">
+                                                    <p>Колдрекс сироп 100 мл</p>
+                                                    <span>1 200 руб</span>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="itemimg"><img src="img/preimg.jpg" /> <span>хит</span></div>
+                                                <div class="title">
+                                                    <p>Колдрекс сироп 100 мл</p>
+                                                    <span>1 200 руб</span>
+                                                </div>
+                                            </div>
+                                            <div class="advs"><img src="img/advs-3.jpg" /></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">ВИТАМИНЫ И БАД</a></li>
+                        <li><a href="#">КРАСОТА</a></li>
+                        <li><a href="#">ГИГИЕНА</a></li>
+                        <li><a href="#">ЛИНЗЫ</a></li>
+                        <li><a href="#">МЕДТОВАРЫ</a></li>
+                        <li><a href="#">ИНТИМ </a></li>
+                        <li><a href="#">ЗООТОВАРЫ</a></li>
+                        <li><a href="#">МЕДТЕХНИКА</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper sort-filtr">
+        <label class="cheker-select akcii"><input type="checkbox" /> Акции</label>
+        <label class="cheker-select covid"><input type="checkbox" /> COVID</label>
+        <label class="cheker-select "><input type="checkbox" /> Аптека </label>
+        <label class="cheker-select "><input type="checkbox" /> Суставы </label>
+        <label class="cheker-select "><input type="checkbox" /> Простуда и грипп</label>
+        <label class="cheker-select "><input type="checkbox" /> Цистит </label>
+        <label class="cheker-select "><input type="checkbox" /> Вредные привычки </label>
+        <label class="cheker-select "><input type="checkbox" /> Сердце</label>
+        <a href="#" class="dropdown-trigger cheker-select" data-target="dropdown1"> Еще </a>
+        <div id='dropdown1' class='dropdown-content more-data'>
+            <div class="alhabet">
+                <span> Категории по алфавиту:</span>
+                <a href="#" class="alhabet_num">A</a>
+                <a href="#" class="alhabet_num">Б</a>
+                <a href="#" class="alhabet_num">В</a>
+                <a href="#" class="alhabet_num">Г</a>
+                <a href="#" class="alhabet_num">Д</a>
+                <a href="#" class="alhabet_num">Ж</a>
+                <a href="#" class="alhabet_num">З</a>
+            </div>
+            <div class="alhabet-content">
+                <ul>
+                    <li><a href="#"> Аллергия</a></li>
+                    <li><a href="#">Антипаразитарные средства</a></li>
+                    <li><a href="#">Боль</a></li>
+                    <li><a href="#">Бронхиальная астма</a></li>
+                    <li><a href="#">Венотоники</a></li>
+                    <li><a href="#">Витамины</a></li>
+                    <li><a href="#"> Дерматологические средства</a></li>
+                    <li><a href="#"> Желудочно-кишечный тракт</a></li>
+                    <li><a href="#">Женское здоровье</a></li>
+                    <li><a href="#"> Иммуномодуляторы</a></li>
+                    <li><a href="#"> Инфекционно-воспалительные заболевания</a></li>
+                    <li><a href="#"> Контроль, снижение веса</a></li>
+                    <li><a href="#"> Мужское здоровье</a></li>
+                    <li><a href="#"> Неврологические средства</a></li>
+                    <li><a href="#"> Аллергия</a></li>
+                    <li><a href="#">Антипаразитарные средства</a></li>
+                    <li><a href="#">Боль</a></li>
+                    <li><a href="#">Бронхиальная астма</a></li>
+                    <li><a href="#">Венотоники</a></li>
+                    <li><a href="#">Витамины</a></li>
+                    <li><a href="#"> Дерматологические средства</a></li>
+                    <li><a href="#"> Желудочно-кишечный тракт</a></li>
+                    <li><a href="#">Женское здоровье</a></li>
+                    <li><a href="#"> Иммуномодуляторы</a></li>
+                    <li><a href="#"> Инфекционно-воспалительные заболевания</a></li>
+                    <li><a href="#"> Контроль, снижение веса</a></li>
+                    <li><a href="#"> Мужское здоровье</a></li>
+                    <li><a href="#"> Неврологические средства</a></li>
+                    <li><a href="#"> Аллергия</a></li>
+                    <li><a href="#">Антипаразитарные средства</a></li>
+                    <li><a href="#">Боль</a></li>
+                    <li><a href="#">Бронхиальная астма</a></li>
+                    <li><a href="#">Венотоники</a></li>
+                    <li><a href="#">Витамины</a></li>
+                    <li><a href="#"> Дерматологические средства</a></li>
+                    <li><a href="#"> Желудочно-кишечный тракт</a></li>
+                    <li><a href="#">Женское здоровье</a></li>
+                    <li><a href="#"> Иммуномодуляторы</a></li>
+                    <li><a href="#"> Инфекционно-воспалительные заболевания</a></li>
+                    <li><a href="#"> Контроль, снижение веса</a></li>
+                    <li><a href="#"> Мужское здоровье</a></li>
+                    <li><a href="#"> Неврологические средства</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- BANNER -->
+    <div class="banner">
+        <div class="wrapper">
+            <div class="navigate">
+                <a href="Previo" class="movePrevCarousel prew arr content-indicator"></a>
+                <a href="Siguiente" class=" moveNextCarousel next arr content-indicator"></a>
+            </div>
+            <div class="carousel slider">
+                <div class="carousel-item" href="#one!">
+                    <img src="img/offer.jpg" />
+                </div>
+                <div class="carousel-item" href="#two!">
+                    <img src="img/offer-2.jpg" />
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="new_block">
+        <div class="advs bigimg"><img src="img/advs-1.jpg" /></div>
+        <div class="advs centered"><img src="img/advs-2.jpg" /></div>
+        <div class="advs"><img src="img/advs-3.jpg" /><img src="img/advs-4.jpg" /></div>
+
+    </div>
+
+
+    <section class="blue">
+        <div class="wrapp">
+            <h4>Вы недавно смотрели</h4>
+            <div class="slider-item4 ">
+                <div class="carousel-element cardware bestprice">
+                    <a href="#card" class="modal-trigger carwind">
+                        <div class="smallsize">
+                            <div class="sv">-20%</div>
+                            <div class="sh sn">new</div>
+                        </div>
+                        <div class="img-wrapper"><img src="img/buket5.jpg" /></div>
+                        <p>Nike Air Huracate<span>Куртка утепленая</span></p>
+                        <div class="pre-price">250 000 р <span>1500 р</span></div>
+                    </a>
+                    <div class="add">
+                        <a href="#addb" class="modal-trigger submit btn">В корзину</a>
+                        <a href="#fav" class="favorit modal-trigger"></a>
+                    </div>
+                </div>
+                <div class="carousel-element cardware bestprice">
+                    <a href="#card" class="modal-trigger carwind">
+                        <div class="smallsize">
+                            <div class="sv">-20%</div>
+                            <div class="sh hit">хит</div>
+                        </div>
+                        <div class="img-wrapper"><img src="img/buket2.jpg" /></div>
+                        <p>Глюкометр Infopia Auto-Coding Premium<span>+ 25 тест-полосок</span></p>
+                        <div class="pre-price">250 000 р <span>1500 р</span></div>
+                    </a>
+                    <div class="add">
+                        <a href="#addb" class="modal-trigger submit btn">В корзину</a>
+                        <a href="#fav" class="favorit modal-trigger"></a>
+                    </div>
+                </div>
+                <div class="carousel-element cardware">
+                    <a href="#card" class="modal-trigger carwind">
+                        <div class="img-wrapper"><img src="img/buket3.jpg" /></div>
+                        <p>Глюкометр Infopia Auto-Coding Premium<span>+ 25 тест-полосок</span></p>
+                        <div class="pre-price">250 000 р</div>
+                    </a>
+                    <div class="add">
+                        <a href="#addb" class="modal-trigger submit btn">В корзину</a>
+                        <a href="#fav" class="favorit modal-trigger"></a>
+                    </div>
+                </div>
+                <div class="carousel-element cardware bestprice">
+                    <a href="#card" class="modal-trigger carwind">
+                        <div class="smallsize">
+                            <div class="sv">-20%</div>
+                            <div class="sh sn">new</div>
+                        </div>
+                        <div class="img-wrapper"><img src="img/buket4.jpg" /></div>
+                        <p>Глюкометр Infopia Auto-Coding Premium<span>+ 25 тест-полосок</span></p>
+                        <div class="pre-price">250 000 р <span>1500 р</span></div>
+                    </a>
+                    <div class="add">
+                        <a href="#addb" class="modal-trigger submit btn">В корзину</a>
+                        <a href="#fav" class="favorit modal-trigger"></a>
+                    </div>
+                </div>
+                <div class="carousel-element cardware  ">
+                    <a href="#card" class="modal-trigger carwind">
+                        <div class="smallsize">
+                            <div class="sv"></div>
+                            <div class="sh sn">new</div>
+                        </div>
+                        <div class="img-wrapper"><img src="img/buket1.jpg" /></div>
+                        <p>Глюкометр Infopia Auto-Coding Premium<span>+ 25 тест-полосок</span></p>
+                        <div class="pre-price">250 000 р </div>
+                    </a>
+                    <div class="add">
+                        <a href="#addb" class="modal-trigger submit btn">В корзину</a>
+                        <a href="#fav" class="favorit modal-trigger"></a>
+                    </div>
+                </div>
+                <div class="carousel-element cardware">
+                    <a href="#card" class="modal-trigger carwind">
+                        <div class="img-wrapper"><img src="img/flower.jpg" /></div>
+                        <p>Глюкометр Infopia Auto-Coding Premium<span>+ 25 тест-полосок</span></p>
+                        <div class="pre-price">250 000 р</div>
+                    </a>
+                    <div class="add">
+                        <a href="#addb" class="modal-trigger submit btn">В корзину</a>
+                        <a href="#fav" class="favorit modal-trigger"></a>
+                    </div>
+                </div>
+                <div class="carousel-element cardware">
+                    <a href="#card" class="modal-trigger carwind">
+                        <div class="smallsize">
+                            <div class="sv">25см</div>
+                            <div class="sh">45см</div>
+                        </div>
+                        <div class="img-wrapper"><img src="img/flower.jpg" /></div>
+                        <p>Nike Air Huracate</p>
+                        <div class="pre-price">250 000 р <span>1500 р</span></div>
+                    </a>
+                    <div class="add">
+                        <a href="#addb" class="modal-trigger submit btn">В корзину</a>
+                        <a href="#fav" class="favorit modal-trigger"></a>
+                    </div>
+                </div>
+                <div class="carousel-element cardware">
+                    <a href="#card" class="modal-trigger carwind">
+                        <div class="smallsize">
+                            <div class="sv">25см</div>
+                            <div class="sh">45см</div>
+                        </div>
+                        <div class="img-wrapper"><img src="img/flower.jpg" /></div>
+                        <p>Nike Air Huracate Nike Air Huracate</p>
+                        <div class="pre-price">250 000 р <span>1500 р</span></div>
+                    </a>
+                    <div class="add">
+                        <a href="#addb" class="modal-trigger submit btn">В корзину</a>
+                        <a href="#fav" class="favorit modal-trigger"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="doublw">
+        <div class="wrapp">
+            <!-- shop -->
+            <div class="col3 acc-menu">
+                <h4>Для красоты</h4>
+                <ul class="collapsible">
+                    <li>
+                        <div class="collapsible-header">Подгузники <i></i></div>
+                        <div class="collapsible-body"><a href="">Детское питание</a><a href="">Подгузники</a><a href="">Детское питание</a><a href="">Подгузники</a></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header">Гигиена <i></i></div>
+                        <div class="collapsible-body"><a href="">Детское питание</a><a href="">Подгузники</a></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><a href="#">Детское питание</a></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header">Игрушки <i></i></div>
+                        <div class="collapsible-body"><a href="">Детское питание</a><a href="">Подгузники</a></div>
+                    </li>
+                </ul>
+                <a href="#" class="more">Все товары</a>
+            </div>
+            <div class=" col7">
+
+                <div class="slider-item3 ">
+                    <div class="carousel-element cardware bestprice">
+                        <a href="#card" class="modal-trigger carwind">
+                            <div class="smallsize">
+                                <div class="sv">-20%</div>
+                                <div class="sh sn">new</div>
+                            </div>
+                            <div class="img-wrapper"><img src="img/buket5.jpg" /></div>
+                            <p>Nike Air Huracate<span>Куртка утепленая</span></p>
+                            <div class="pre-price">250 000 р <span>1500 р</span></div>
+                        </a>
+                        <div class="add">
+                            <a href="#addb" class="modal-trigger submit btn">В корзину</a>
+                            <a href="#fav" class="favorit modal-trigger"></a>
+                        </div>
+                    </div>
+                    <div class="carousel-element cardware bestprice">
+                        <a href="#card" class="modal-trigger carwind">
+                            <div class="smallsize">
+                                <div class="sv">-20%</div>
+                                <div class="sh hit">хит</div>
+                            </div>
+                            <div class="img-wrapper"><img src="img/buket4.jpg" /></div>
+                            <p>Глюкометр Infopia Auto-Coding Premium<span>+ 25 тест-полосок</span></p>
+                            <div class="pre-price">250 000 р <span>1500 р</span></div>
+                        </a>
+                        <div class="add">
+                            <a href="#addb" class="modal-trigger submit btn">В корзину</a>
+                            <a href="#fav" class="favorit modal-trigger"></a>
+                        </div>
+                    </div>
+                    <div class="carousel-element cardware">
+                        <a href="#card" class="modal-trigger carwind">
+                            <div class="img-wrapper"><img src="img/buket3.jpg" /></div>
+                            <p>Глюкометр Infopia Auto-Coding Premium<span>+ 25 тест-полосок</span></p>
+                            <div class="pre-price">250 000 р</div>
+                        </a>
+                        <div class="add">
+                            <a href="#addb" class="modal-trigger submit btn">В корзину</a>
+                            <a href="#fav" class="favorit modal-trigger"></a>
+                        </div>
+                    </div>
+                    <div class="carousel-element cardware bestprice">
+                        <a href="#card" class="modal-trigger carwind">
+                            <div class="smallsize">
+                                <div class="sv">-20%</div>
+                                <div class="sh sn">new</div>
+                            </div>
+                            <div class="img-wrapper"><img src="img/buket4.jpg" /></div>
+                            <p>Глюкометр Infopia Auto-Coding Premium<span>+ 25 тест-полосок</span></p>
+                            <div class="pre-price">250 000 р <span>1500 р</span></div>
+                        </a>
+                        <div class="add">
+                            <a href="#addb" class="modal-trigger submit btn">В корзину</a>
+                            <a href="#fav" class="favorit modal-trigger"></a>
+                        </div>
+                    </div>
+                    <div class="carousel-element cardware  ">
+                        <a href="#card" class="modal-trigger carwind">
+                            <div class="smallsize">
+                                <div class="sv"></div>
+                                <div class="sh sn">new</div>
+                            </div>
+                            <div class="img-wrapper"><img src="img/buket1.jpg" /></div>
+                            <p>Глюкометр Infopia Auto-Coding Premium<span>+ 25 тест-полосок</span></p>
+                            <div class="pre-price">250 000 р </div>
+                        </a>
+                        <div class="add">
+                            <a href="#addb" class="modal-trigger submit btn">В корзину</a>
+                            <a href="#fav" class="favorit modal-trigger"></a>
+                        </div>
+                    </div>
+                    <div class="carousel-element cardware">
+                        <a href="#card" class="modal-trigger carwind">
+                            <div class="img-wrapper"><img src="img/flower.jpg" /></div>
+                            <p>Глюкометр Infopia Auto-Coding Premium<span>+ 25 тест-полосок</span></p>
+                            <div class="pre-price">250 000 р</div>
+                        </a>
+                        <div class="add">
+                            <a href="#addb" class="modal-trigger submit btn">В корзину</a>
+                            <a href="#fav" class="favorit modal-trigger"></a>
+                        </div>
+                    </div>
+                    <div class="carousel-element cardware">
+                        <a href="#card" class="modal-trigger carwind">
+                            <div class="smallsize">
+                                <div class="sv">25см</div>
+                                <div class="sh">45см</div>
+                            </div>
+                            <div class="img-wrapper"><img src="img/flower.jpg" /></div>
+                            <p>Nike Air Huracate</p>
+                            <div class="pre-price">250 000 р <span>1500 р</span></div>
+                        </a>
+                        <div class="add">
+                            <a href="#addb" class="modal-trigger submit btn">В корзину</a>
+                            <a href="#fav" class="favorit modal-trigger"></a>
+                        </div>
+                    </div>
+                    <div class="carousel-element cardware">
+                        <a href="#card" class="modal-trigger carwind">
+                            <div class="smallsize">
+                                <div class="sv">25см</div>
+                                <div class="sh">45см</div>
+                            </div>
+                            <div class="img-wrapper"><img src="img/flower.jpg" /></div>
+                            <p>Nike Air Huracate Nike Air Huracate</p>
+                            <div class="pre-price">250 000 р <span>1500 р</span></div>
+                        </a>
+                        <div class="add">
+                            <a href="#addb" class="modal-trigger submit btn">В корзину</a>
+                            <a href="#fav" class="favorit modal-trigger"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BRANDS -->
+    <section class="cyan">
+        <div class="wrapper branding">
+            <h2>Популярные брэнды</h2>
+            <div class="brands">
+                <div class="carousel-element"><img src="img/brends-1.jpg" /></div>
+                <div class="carousel-element"><img src="img/brends-2.jpg" /></div>
+                <div class="carousel-element"><img src="img/brends-3.jpg" /></div>
+                <div class="carousel-element"><img src="img/brends-4.jpg" /></div>
+                <div class="carousel-element"><img src="img/brends-6.jpg" /></div>
+                <div class="carousel-element"><img src="img/brends-1.jpg" /></div>
+                <div class="carousel-element"><img src="img/brends-2.jpg" /></div>
+                <div class="carousel-element"><img src="img/brends-3.jpg" /></div>
+                <div class="carousel-element"><img src="img/brends-4.jpg" /></div>
+                <div class="carousel-element"><img src="img/brends-6.jpg" /></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blue doublw">
+        <div class="wrapp ">
+            <!-- shop -->
+            <div class="col3 acc-menu">
+                <h4>Для детей</h4>
+                <ul class="collapsible">
+                    <li>
+                        <div class="collapsible-header">Подгузники <i></i></div>
+                        <div class="collapsible-body"><a href="">Детское питание</a><a href="">Подгузники</a><a href="">Детское питание</a><a href="">Подгузники</a></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header">Гигиена <i></i></div>
+                        <div class="collapsible-body"><a href="">Детское питание</a><a href="">Подгузники</a></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><a href="#">Детское питание</a></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header">Игрушки <i></i></div>
+                        <div class="collapsible-body"><a href="">Детское питание</a><a href="">Подгузники</a></div>
+                    </li>
+                </ul>
+                <a href="#" class="more">Все товары</a>
+            </div>
+            <div class=" col7">
+                <div class="slider-item4 ">
+                    <div class="carousel-element cardware ">
+                        <a href="#card" class="modal-trigger carwind">
+                            <div class="smallsize">
+                                <div class="sv">-20%</div>
+                                <div class="sh sn">new</div>
+                            </div>
+                            <div class="img-wrapper"><img src="img/buket5.jpg" /></div>
+                            <p>Nike Air Huracate<span>Куртка утепленая</span></p>
+                            <div class="pre-price">250 000 р <span>1500 р</span></div>
+                        </a>
+                        <div class="add">
+                            <a href="#addb" class="modal-trigger submit btn">В корзину</a>
+                            <a href="#fav" class="favorit modal-trigger"></a>
+                        </div>
+                    </div>
+                    <div class="carousel-element cardware bestprice">
+                        <a href="#card" class="modal-trigger carwind">
+                            <div class="smallsize">
+                                <div class="sv">-20%</div>
+                                <div class="sh hit">хит</div>
+                            </div>
+                            <div class="img-wrapper"><img src="img/buket4.jpg" /></div>
+                            <p>Глюкометр Infopia Auto-Coding Premium<span>+ 25 тест-полосок</span></p>
+                            <div class="pre-price">250 000 р <span>1500 р</span></div>
+                        </a>
+                        <div class="add">
+                            <a href="#addb" class="modal-trigger submit btn">В корзину</a>
+                            <a href="#fav" class="favorit modal-trigger"></a>
+                        </div>
+                    </div>
+                    <div class="carousel-element cardware">
+                        <a href="#card" class="modal-trigger carwind">
+                            <div class="img-wrapper"><img src="img/buket3.jpg" /></div>
+                            <p>Глюкометр Infopia Auto-Coding Premium<span>+ 25 тест-полосок</span></p>
+                            <div class="pre-price">250 000 р</div>
+                        </a>
+                        <div class="add">
+                            <a href="#addb" class="modal-trigger submit btn">В корзину</a>
+                            <a href="#fav" class="favorit modal-trigger"></a>
+                        </div>
+                    </div>
+                    <div class="carousel-element cardware bestprice">
+                        <a href="#card" class="modal-trigger carwind">
+                            <div class="smallsize">
+                                <div class="sv">-20%</div>
+                                <div class="sh sn">new</div>
+                            </div>
+                            <div class="img-wrapper"><img src="img/buket4.jpg" /></div>
+                            <p>Глюкометр Infopia Auto-Coding Premium<span>+ 25 тест-полосок</span></p>
+                            <div class="pre-price">250 000 р <span>1500 р</span></div>
+                        </a>
+                        <div class="add">
+                            <a href="#addb" class="modal-trigger submit btn">В корзину</a>
+                            <a href="#fav" class="favorit modal-trigger"></a>
+                        </div>
+                    </div>
+                    <div class="carousel-element cardware  ">
+                        <a href="#card" class="modal-trigger carwind">
+                            <div class="smallsize">
+                                <div class="sv"></div>
+                                <div class="sh sn">new</div>
+                            </div>
+                            <div class="img-wrapper"><img src="img/buket1.jpg" /></div>
+                            <p>Глюкометр Infopia Auto-Coding Premium<span>+ 25 тест-полосок</span></p>
+                            <div class="pre-price">250 000 р </div>
+                        </a>
+                        <div class="add">
+                            <a href="#addb" class="modal-trigger submit btn">В корзину</a>
+                            <a href="#fav" class="favorit modal-trigger"></a>
+                        </div>
+                    </div>
+                    <div class="carousel-element cardware">
+                        <a href="#card" class="modal-trigger carwind">
+                            <div class="img-wrapper"><img src="img/flower.jpg" /></div>
+                            <p>Глюкометр Infopia Auto-Coding Premium<span>+ 25 тест-полосок</span></p>
+                            <div class="pre-price">250 000 р</div>
+                        </a>
+                        <div class="add">
+                            <a href="#addb" class="modal-trigger submit btn">В корзину</a>
+                            <a href="#fav" class="favorit modal-trigger"></a>
+                        </div>
+                    </div>
+                    <div class="carousel-element cardware">
+                        <a href="#card" class="modal-trigger carwind">
+                            <div class="smallsize">
+                                <div class="sv">25см</div>
+                                <div class="sh">45см</div>
+                            </div>
+                            <div class="img-wrapper"><img src="img/flower.jpg" /></div>
+                            <p>Nike Air Huracate</p>
+                            <div class="pre-price">250 000 р <span>1500 р</span></div>
+                        </a>
+                        <div class="add">
+                            <a href="#addb" class="modal-trigger submit btn">В корзину</a>
+                            <a href="#fav" class="favorit modal-trigger"></a>
+                        </div>
+                    </div>
+                    <div class="carousel-element cardware">
+                        <a href="#card" class="modal-trigger carwind">
+                            <div class="smallsize">
+                                <div class="sv">25см</div>
+                                <div class="sh">45см</div>
+                            </div>
+                            <div class="img-wrapper"><img src="img/flower.jpg" /></div>
+                            <p>Nike Air Huracate Nike Air Huracate</p>
+                            <div class="pre-price">250 000 р <span>1500 р</span></div>
+                        </a>
+                        <div class="add">
+                            <a href="#addb" class="modal-trigger submit btn">В корзину</a>
+                            <a href="#fav" class="favorit modal-trigger"></a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="wrapp">
+            <h4>Вы недавно смотрели</h4>
+
+            <div class="slider-item4">
+                <div class="carousel-element cardware ">
+
+                    <a href="#card" class="modal-trigger carwind">
+                        <div class="smallsize">
+                            <div class="sv">-20%</div>
+                            <div class="sh sn">new</div>
+                        </div>
+                        <div class="img-wrapper"><img src="img/buket5.jpg" /></div>
+                        <p>Nike Air Huracate<span>Куртка утепленая</span></p>
+                        <div class="pre-price">250 000 р <span>1500 р</span></div>
+                    </a>
+                    <div class="add">
+                        <a href="#addb" class="modal-trigger submit btn">В корзину</a>
+                        <a href="#fav" class="favorit modal-trigger"></a>
+                    </div>
+                </div>
+                <div class="carousel-element cardware bestprice">
+                    <a href="#card" class="modal-trigger carwind">
+                        <div class="smallsize">
+                            <div class="sv">-20%</div>
+                            <div class="sh hit">хит</div>
+                        </div>
+                        <div class="img-wrapper"><img src="img/buket2.jpg" /></div>
+                        <p>Глюкометр Infopia Auto-Coding Premium<span>+ 25 тест-полосок</span></p>
+                        <div class="pre-price">250 000 р <span>1500 р</span></div>
+                    </a>
+                    <div class="add">
+                        <a href="#addb" class="modal-trigger submit btn">В корзину</a>
+                        <a href="#fav" class="favorit modal-trigger"></a>
+                    </div>
+                </div>
+                <div class="carousel-element cardware">
+                    <a href="#card" class="modal-trigger carwind">
+                        <div class="img-wrapper"><img src="img/buket3.jpg" /></div>
+                        <p>Глюкометр Infopia Auto-Coding Premium<span>+ 25 тест-полосок</span></p>
+                        <div class="pre-price">250 000 р</div>
+                    </a>
+                    <div class="add">
+                        <a href="#addb" class="modal-trigger submit btn">В корзину</a>
+                        <a href="#fav" class="favorit modal-trigger"></a>
+                    </div>
+                </div>
+                <div class="carousel-element cardware bestprice">
+                    <a href="#card" class="modal-trigger carwind">
+                        <div class="smallsize">
+                            <div class="sv">-20%</div>
+                            <div class="sh sn">new</div>
+                        </div>
+                        <div class="img-wrapper"><img src="img/buket4.jpg" /></div>
+                        <p>Глюкометр Infopia Auto-Coding Premium<span>+ 25 тест-полосок</span></p>
+                        <div class="pre-price">250 000 р <span>1500 р</span></div>
+                    </a>
+                    <div class="add">
+                        <a href="#addb" class="modal-trigger submit btn">В корзину</a>
+                        <a href="#fav" class="favorit modal-trigger"></a>
+                    </div>
+                </div>
+                <div class="carousel-element cardware  ">
+                    <a href="#card" class="modal-trigger carwind">
+                        <div class="smallsize">
+                            <div class="sv"></div>
+                            <div class="sh sn">new</div>
+                        </div>
+                        <div class="img-wrapper"><img src="img/buket1.jpg" /></div>
+                        <p>Глюкометр Infopia Auto-Coding Premium<span>+ 25 тест-полосок</span></p>
+                        <div class="pre-price">250 000 р </div>
+                    </a>
+                    <div class="add">
+                        <a href="#addb" class="modal-trigger submit btn">В корзину</a>
+                        <a href="#fav" class="favorit modal-trigger"></a>
+                    </div>
+                </div>
+                <div class="carousel-element cardware">
+                    <a href="#card" class="modal-trigger carwind">
+                        <div class="img-wrapper"><img src="img/flower.jpg" /></div>
+                        <p>Глюкометр Infopia Auto-Coding Premium<span>+ 25 тест-полосок</span></p>
+                        <div class="pre-price">250 000 р</div>
+                    </a>
+                    <div class="add">
+                        <a href="#addb" class="modal-trigger submit btn">В корзину</a>
+                        <a href="#fav" class="favorit modal-trigger"></a>
+                    </div>
+                </div>
+                <div class="carousel-element cardware">
+                    <a href="#card" class="modal-trigger carwind">
+                        <div class="smallsize">
+                            <div class="sv">25см</div>
+                            <div class="sh">45см</div>
+                        </div>
+                        <div class="img-wrapper"><img src="img/flower.jpg" /></div>
+                        <p>Nike Air Huracate</p>
+                        <div class="pre-price">250 000 р <span>1500 р</span></div>
+                    </a>
+                    <div class="add">
+                        <a href="#addb" class="modal-trigger submit btn">В корзину</a>
+                        <a href="#fav" class="favorit modal-trigger"></a>
+                    </div>
+                </div>
+                <div class="carousel-element cardware">
+                    <a href="#card" class="modal-trigger carwind">
+                        <div class="smallsize">
+                            <div class="sv">25см</div>
+                            <div class="sh">45см</div>
+                        </div>
+                        <div class="img-wrapper"><img src="img/flower.jpg" /></div>
+                        <p>Nike Air Huracate Nike Air Huracate</p>
+                        <div class="pre-price">250 000 р <span>1500 р</span></div>
+                    </a>
+                    <div class="add">
+                        <a href="#addb" class="modal-trigger submit btn">В корзину</a>
+                        <a href="#fav" class="favorit modal-trigger"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOTTER  -->
+    <footer>
+        <div class="wrapper">
+            <div class="row  valign-justif">
+                <div class="col">
+                    <p class="b_phone">
+                        <a href="tel:+7 (800) 500-9108">+7 (800) 500-9108</a>
+                        <span>Телефон горячей линии</span>
+                    </p>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li><a href="#">Личный кабинет</a></li>
+                        <li><a href="#">Карта сайта</a></li>
+                        <li><a href="#">Реклама</a></li>
+                        <li><a href="#">Партнерам</a></li>
+                        <li><a href="#">Политика конфидециальности</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="logo-copy col s3 valign-justify">
+                <img src="img/logo.png" />
+                <p>Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</p>
+
+            </div>
+            <div class="bottom-menu col s9">
+                <div class="col s3">
+                    <ul>
+                        <span>ИНФОРМАЦИЯ</span>
+                        <li><a href="#">О магазине</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Оплата</a></li>
+                        <li><a href="#">Контакты</a></li>
+
+                    </ul>
+                </div>
+                <div class="col s3">
+                    <ul>
+                        <span>СПЕЦ. ПРЕДЛОЖЕНИЯ</span>
+                        <li><a href="#">Инвесторам</a></li>
+                        <li><a href="#">Юр. лицам</a></li>
+                        <li><a href="#">Бренды</a></li>
+                    </ul>
+
+                </div>
+                <div class="col s3">
+                    <ul>
+                        <span>ПОМОЩЬ</span>
+                        <li><a href="#">Вопросы и ответы</a></li>
+                        <li><a href="#">Письмо руководителю</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="super-bottom">
+            <div class="wrapper strench">
+                <div class="col m3"><span>© 2007 «Файберам-маркет» <br/>Все права защищены/span></div>
+                <div class="col m3 ">
+                        <img src="images/payment.png" alt="">
+                </div>
+               
+                <div class="col m3 social">
+                    <!-- <a href="#" class="icon user">Создать личный кабинет</a>-->
+                    <a href="#" class=" vk"></a>
+                    <a href="#" class=" fb"></a>
+                    <a href="#" class=" ins"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Body END  -->
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            // Меню адаптив ----------------
+            $(".menu-triger").click(function() {
+                $(".main-menu").slideToggle(200);
+            });
+            // Каталог адаптив ----------------
+            $(".main-menu .close").click(function() {
+                $(".main-menu").slideToggle(200);
+            });
+
+            // Главный банер ----------------
+            $('.slider').carousel({
+                indicators: true,
+                //dist:0,
+                numVisible: 1,
+                fullWidth: true,
+                shift: 0,
+                padding: 50
+
+            });
+            $('.moveNextCarousel').click(function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                $('.slider').carousel('next');
+            });
+            $('.movePrevCarousel').click(function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                $('.slider').carousel('prev');
+            });
+
+            // Стилизация форм ----------------
+            $('select').formSelect();
+            $('.dropdown-trigger').dropdown();
+            // Модальные окна ----------------
+            $('.modal').modal();
+            $('.pre-tabs').tabs();
+
+     
+            // Аккордион в карточке----------------
+            $('.expand').collapsible({
+                accordion: false
+            });
+            $('.collapsible').collapsible();
+
+            // Карусель товаров ----------------
+
+            var carousel4 = $(".slider-item4");
+            carousel4.owlCarousel({
+                itemsDesktop: 4, 
+                itemsDesktop: [1920, 4],
+                itemsDesktopSmall: [1400, 4],
+                itemsMobile: [420, 1]
+            });
+ 
+            //------------------------------------------
+            var carousel3 = $(".slider-item3");
+            carousel3.owlCarousel({
+                itemsDesktop: 3, 
+                itemsDesktop: [1920, 3],
+                itemsDesktopSmall: [1400, 3],
+                itemsTablet: false,
+                itemsMobile: [420, 1]
+            });
+   
+            var carousel3 = $(".brands");
+            carousel3.owlCarousel({
+                itemsDesktop: 4, 
+                itemsDesktop: [1900, 4],
+                itemsDesktopSmall: [1000, 3],
+                itemsTablet: false,
+                itemsMobile: [375, 1]
+            });
+
+        });
+    </script>
+</body>
+
+</html>
