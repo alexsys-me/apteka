@@ -279,7 +279,7 @@ section h4 {
     display: -o-flex;
     display: flex;
     margin: auto;
-    max-width: 1200px;
+    max-width: 1154px;
     width: 100%;
     height: auto;
     z-index: 10
@@ -8642,7 +8642,7 @@ a.tarif:before {
 
 .acc-menu .collapsible .collapsible-header {
     padding-left: 0px;
-    border-bottom: 1px solid #dbdbe6;
+    border-bottom: 1px solid #E2ECFB;
 }
 
 .acc-menu .collapsible .collapsible-header,
@@ -8832,4 +8832,78 @@ a.tarif:before {
     color: #637289;
     font-size: 14px;
     padding: 4px;
+}
+
+.lef_col {
+    min-width: 250px;
+    padding-top: 37px;
+}
+
+.lef_col .tabs {
+    overflow: hidden;
+    display: flex;
+    height: 30px;
+    margin-bottom: 15px;
+}
+
+.lef_col .tab a.active {
+    color: #366AB9;
+}
+
+.right_col .owl-carousel {
+    margin-bottom: 20px;
+}
+
+.lef_col .tab a {
+    color: #BCBCBC;
+    font-size: 18px;
+    overflow: hidden;
+    text-align: left;
+    font-weight: 500;
+    padding: 0;
+    padding-right: 15px;
+}
+
+.lef_col .tab:hover a:not(.active) {
+    color: #8c8c8c;
+}
+
+.collapsible>.active>.collapsible-header {
+    font-weight: bold;
+}
+
+.acc-menu .collapsible .collapsible-header,
+.lef_col .acc-menu .collapsible .collapsible-header a {
+    font-size: 14px;
+    color: #366AB9;
+}
+
+.lef_col .acc-menu .collapsible .collapsible-header a:hover {
+    text-decoration: underline;
+}
+
+.lef_col .collapsible-header {
+    padding: 8px 0;
+}
+
+.lef_col .collapsible-body {
+    color: #366AB9;
+}
+
+.collapsible-header i:before,
+.collapsible-header i:after {
+    display: none;
+}
+
+.collapsible-header>i {
+    background: url(../images/arro.svg) no-repeat center center;
+    transform: rotate(90deg);
+}
+
+.active>.collapsible-header i {
+    transform: rotate(270deg);
+}
+
+.indicator {
+    display: none;
 }
