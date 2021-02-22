@@ -4938,10 +4938,6 @@ header .select-wrapper .caret {
     margin-bottom: 20px
 }
 
-.component .cardware {
-    max-height: 300px
-}
-
 .cardware.premium {
     flex: 50%;
     max-width: 50%
@@ -7232,7 +7228,7 @@ header+.company-data {
 }
 
 .smallsize .sh.sn {
-    background: #7c7fb3
+    background: #DF7514
 }
 
 .smallsize .sv {
@@ -7371,6 +7367,10 @@ header+.company-data {
 .brands {
     padding-bottom: 40px;
     padding-top: 20px
+}
+
+.brands .carousel-element {
+    border: 1px solid #e8e8e8;
 }
 
 .component .title .setting a {
@@ -8614,7 +8614,7 @@ a.tarif:before {
 
 .acc-menu .collapsible {
     border: none;
-    margin-right: 35px;
+    max-width: 250px;
 }
 
 .acc-menu .more {
@@ -8627,26 +8627,36 @@ a.tarif:before {
 }
 
 .collapsible-body {
-    padding: 10px;
+    padding: 0;
+    padding-top: 10px;
 }
 
-.collapsible-body a {
+.lef_col {
+    padding-right: 35px;
+    box-sizing: border-box;
+}
+
+.lef_col .collapsible-body a {
     display: block;
     width: 100%;
-    color: #7e889c;
+    color: #366AB9;
 }
 
-.collapsible-body a:hover {
+.lef_col .collapsible-body a:hover {
     color: #366AB9
 }
 
-.acc-menu .collapsible .collapsible-header {
+.lef_col .acc-menu .collapsible .collapsible-header {
     padding-left: 0px;
     border-bottom: 1px solid #E2ECFB;
 }
 
-.acc-menu .collapsible .collapsible-header,
-.acc-menu .collapsible .collapsible-header a {
+.lef_col .acc-menu .collapsible-body .collapsible-body a {
+    padding: 5px 0px!important;
+}
+
+.lef_col .acc-menu .collapsible .collapsible-header,
+.lef_col .acc-menu .collapsible .collapsible-header a {
     color: #1B2437;
     font-weight: normal;
     font-size: 16px;
@@ -8659,7 +8669,7 @@ a.tarif:before {
     display: block;
     width: 16px;
     height: 16px;
-    margin-right: 0;
+    margin-right: 5px;
     position: relative;
 }
 
@@ -8835,7 +8845,7 @@ a.tarif:before {
 }
 
 .lef_col {
-    min-width: 250px;
+    min-width: 270px;
     padding-top: 37px;
 }
 
@@ -8888,6 +8898,19 @@ a.tarif:before {
 
 .lef_col .collapsible-body {
     color: #366AB9;
+    padding: 0px;
+}
+
+.lef_col .collapsible-body .collapsible-header {
+    background: url(../images/more.svg) no-repeat left 9px;
+    color: #6b95d6;
+    margin-left: -5px;
+    padding-left: 22px!important;
+    padding-top: 8px;
+}
+
+.lef_col .collapsible-body {
+    border: none!important;
 }
 
 .collapsible-header i:before,
@@ -8906,4 +8929,208 @@ a.tarif:before {
 
 .indicator {
     display: none;
+}
+
+h1.main_title {
+    text-align: left;
+    color: #366AB9;
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+.shocase_banner {
+    margin-bottom: 15px;
+}
+
+.links_shocase {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.links_shocase a {
+    background: #F3F7FD;
+    color: #4A5361;
+    height: 100px;
+    flex: 1;
+    line-height: 20px;
+    padding: 0 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 4px;
+    max-width: 25%;
+}
+
+.links_shocase a:hover {
+    background: #e5eaf3;
+}
+
+h4.light_grey {
+    color: #9C9C9C;
+}
+
+.right_col .owl-controls.clickable {
+    top: -48px;
+}
+
+.right_col .brands {
+    padding-bottom: 20px
+}
+
+.schowcase_items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.schowcase_items .cardware {
+    flex: 30%;
+    max-width: 30%;
+}
+
+.breadcum {
+    color: #D2DBE9;
+    font-size: 14px;
+    display: flex;
+    margin-bottom: 6px;
+    margin-top: -25px;
+}
+
+.breadcum a {
+    color: #b5bdca;
+    margin-right: 5px;
+}
+
+.breadcum a:hover {
+    text-decoration: underline;
+}
+
+.setting_filtr {
+    border-bottom: 1px solid #B8C1C1;
+    margin-bottom: 25px;
+    padding-bottom: 5px;
+}
+
+.setting_select_links {
+    margin-left: 10px;
+    color: #B7B7B7;
+}
+
+.setting_select_links a {
+    color: #292929;
+    margin: 0 3px;
+}
+
+.setting_select_links a:hover,
+.setting_select_links a.active {
+    color: #366AB9;
+}
+
+.setting_filtr,
+.setting_select {
+    display: flex;
+    justify-content: space-between;
+}
+
+.setting_sort label {
+    margin-left: 5px;
+}
+
+.setting_select .res {
+    font-weight: 500;
+    color: #366AB9;
+    margin-right: 5px;
+}
+
+.setting_select p {
+    color: #292929;
+    margin: 0;
+    line-height: 23px;
+}
+
+.subfiltr {
+    width: 100%;
+    display: block;
+    color: #366AB9;
+    font-weight: 600;
+    border-bottom: 1px solid #E2ECFB;
+    padding: 7px 0;
+    background: url(../images/arrow_icn_small.svg) no-repeat 95% center;
+}
+
+.subfiltr_link {
+    display: block;
+    color: #366AB9;
+    border-bottom: 1px solid #E2ECFB;
+    padding: 7px 0;
+    padding-left: 15px;
+    background: url(../images/arrow_icn_small.svg) no-repeat 95% center;
+}
+
+.subfiltr:hover,
+.subfiltr_link:hover {
+    background: #F3F7FD url(../images/arrow_icn_small.svg) no-repeat right center;
+}
+
+.filtracc {
+    background: #F3F7FD;
+    padding: 10px 15px;
+    margin-top: 20px;
+}
+
+.filtracc .collapsible-header {
+    font-weight: bold!important;
+    color: #576780!important;
+    font-size: 14px!important;
+    margin-bottom: 10px;
+}
+
+.serche_filtr {
+    position: relative;
+    padding: 5px 0;
+    margin-bottom: 10px;
+}
+
+.serche_filtr input[type=text] {
+    width: 100%;
+    background: #fff;
+    border: none;
+    height: 24px;
+}
+
+.serche_filtr input[type=submit] {
+    position: absolute;
+    background: transparent url(../images/ant-design_search-outlined.svg) no-repeat center center;
+    text-indent: -10000%;
+    border: none;
+    right: 0px;
+    top: 6px;
+    width: 20px;
+    height: 24px;
+}
+
+.serche_res label {
+    width: 100%;
+    display: block;
+}
+
+.serche_res a {
+    font-size: 12px;
+}
+
+.serche_res label span {
+    font-size: 13px!important;
+    line-height: 16px!important;
+    padding-left: 24px!important;
+    color: #576780!important;
+}
+
+.filtracc .submit {
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
