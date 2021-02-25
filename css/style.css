@@ -9513,7 +9513,7 @@ h1.maintitle {
 .time-devilery_wrapper {
     background: rgb(219, 223, 240);
     width: 100%;
-    background: linear-gradient(90deg, rgba(219, 223, 240, 1) 0%, rgba(219, 223, 240, 1) 48%, rgba(250, 250, 250, 1) 49%, rgba(250, 250, 250, 1) 100%);
+    background: linear-gradient(90deg, rgb(54 106 185) 0%, rgb(54 106 185) 48%, rgba(250, 250, 250, 1) 49%, rgba(250, 250, 250, 1) 100%);
 }
 
 .left_devilery {
@@ -9533,7 +9533,7 @@ h1.maintitle {
 .left_devilery a {
     font-size: 36px;
     font-weight: 600;
-    color: #5A5F9E;
+    color: #fff;
 }
 
 .right_devilery {
@@ -10638,7 +10638,7 @@ input[type=submit].modal-close {
     box-sizing: border-box;
     text-align: right;
     z-index: 10;
-    background: #DBDFF0;
+    background: #366ab9;
 }
 
 .left_devilery p {
