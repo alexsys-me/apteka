@@ -209,7 +209,7 @@ section {
     padding: 60px 0
 }
 
-section h4 {
+.component h4 {
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
@@ -1175,23 +1175,6 @@ strong {
     margin-bottom: 35px;
 }
 
-.showcase h4.sell:before {
-    content: "\f10e";
-    font-weight: 400;
-    color: #8e8e9c
-}
-
-.showcase h4.news:before {
-    content: "\f10d";
-    font-weight: 400;
-    color: #8e8e9c
-}
-
-.showcase h4.hot:before {
-    content: "\f110";
-    font-weight: 400;
-    color: #8e8e9c
-}
 
 .btn.style1:hover {
     background: #441d5e;
@@ -6143,22 +6126,17 @@ header .select-wrapper .caret {
 
 .component {
     padding-top: 0;
+    margin: auto;
     margin-bottom: -8px;
     position: relative;
     padding-bottom: 100px;
     z-index: 90
 }
 
-.shop .see.showcase .navigate {
-    margin-top: -90px
-}
 
-.see.showcase {
-    margin-top: 50px
-}
 
-.see.showcase .navigate {
-    margin-top: -39px
+.showcase .navigate {
+   display: none;
 }
 
 .component h4 {
@@ -11097,11 +11075,11 @@ input[type=submit].modal-close {
     padding-top: 0px;
     margin-bottom: -8px;
     position: relative;
-    padding-bottom: 100px;
+   
     z-index: 90;
     flex: 1;
-    max-width: 1300px;
-    width: 100%;
+    width: 100%;    background-color: #FEFEFF;
+    padding: 60px 0;
 }
 
 .blog-item img {
