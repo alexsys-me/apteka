@@ -3390,7 +3390,7 @@ footer .super-bottom a.user:before {
 
 .cardware .btn {
     width: 70%;
-    margin: auto;
+    margin: auto;    color: #fff;
     background: #366AB9;
     height: 40px;
     line-height: 40px;
@@ -3564,7 +3564,7 @@ footer .super-bottom a.user:before {
     background: #fff;
     padding: 25px 0 18px
 }
-
+.carousel-element a{    color: #366ab9;}
 .kategory .carousel-element p {
     padding: 0 15px;
     color: #46494f
@@ -5696,7 +5696,7 @@ header .select-wrapper .caret {
     margin-bottom: 50px;
     margin-top: 0;
     background: #fff;
-    margin-left: 0
+    margin-left: 0;    margin-top: 20px;
 }
 
 .filtr .btn.submit {
@@ -6891,7 +6891,7 @@ header .select-wrapper .caret {
 
 .banner .navigate .arr.prew {
     background-image: url(../images/back.png);
-    background-size: 50%;
+    background-size: 15%;
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -7144,7 +7144,7 @@ header+.company-data {
 
 .cardware .img-wrapper+p {
     overflow: hidden;
-    height: 40px;
+    height: 46px;
     margin-bottom: 10px
 }
 
@@ -8627,6 +8627,7 @@ a.tarif:before {
 .lef_col .acc-menu .collapsible .collapsible-header {
     padding-left: 0px;
     border-bottom: 1px solid #E2ECFB;
+    border-top:none;
 }
 
 .lef_col .acc-menu .collapsible-body .collapsible-body a {
@@ -8860,7 +8861,7 @@ a.tarif:before {
     font-weight: bold;
 }
 
-.acc-menu .collapsible .collapsible-header,
+
 .lef_col .acc-menu .collapsible .collapsible-header a {
     font-size: 14px;
     color: #366AB9;
@@ -8962,12 +8963,12 @@ h4.light_grey {
 .schowcase_items {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .schowcase_items .cardware {
     flex: 30%;
-    max-width: 30%;
+    max-width: 30%;    margin-right: 27px;
 }
 
 .breadcum {
@@ -9341,7 +9342,7 @@ h1.maintitle {
 }
 
 .our_better_icons {
-    width: 100%;
+    width: 100%;    max-width: 1154px; margin: auto;
 }
 
 .our_better_icons-wrapper {
@@ -11117,3 +11118,15 @@ input[type=submit].modal-close {
 .blog-our .owl-item {
     max-width: 310px!important;
 }
+
+.acc-menu h4, section h4{ font-weight: bold; color:#151515; font-size: 20px;    text-align: left;    text-transform: uppercase;}
+.acc-menu .collapsible{    margin-top: 40px;}
+.acc-menu .collapsible-header {
+    font-size: 16px;    justify-content: space-between;    border-bottom: 1px solid #e4eaf1;
+    color:#1B2437;    padding: 7px 0;
+}
+.acc-menu .collapsible-header i{ margin-top: 5px;}
+.acc-menu .collapsible-header a{ color:#1B2437;  }
+.acc-menu .collapsible-body a{ color:#1B2437; display: block;    font-size: 14px;}
+.acc-menu .collapsible-body{ padding-bottom: 20px;}
+.acc-menu  a:hover{color:#366AB9}
