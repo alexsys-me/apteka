@@ -1279,7 +1279,6 @@ input[type=file] {
 .btn.submit {
     height: 46px;
     line-height: 46px;
-    min-width: 150px;
     background: #366AB9
 }
 
@@ -1291,7 +1290,7 @@ input[type=file] {
 
 .btn.submit:hover {
     text-decoration: none;
-    background: #323577
+    background: #1b4482
 }
 
 .btn:hover {
@@ -1517,10 +1516,7 @@ input[type=file] {
 }
 
 .content .tabs .tab a.active {
-    background: #feafc4;
     color: #fff;
-    box-shadow: 3px 3px 10px #feafc4cc;
-    border: 1px solid #feafc4
 }
 
 .content .tabs .indicator {
@@ -2358,7 +2354,6 @@ header .search .select-wrapper .dropdown-content li span {
     align-items: flex-end;
     white-space: nowrap;
     color: #58585a;
-    padding: 19px 20px 0;
     font-size: 14px
 }
 
@@ -2441,7 +2436,7 @@ header .search .select-wrapper .dropdown-content li span {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background: #f4f4f4;
+    background: #e6edf7;
     padding: 20px
 }
 
@@ -2517,18 +2512,18 @@ header .search .select-wrapper .dropdown-content li span {
     font-size: 11px;
     color: #fff;
     margin-left: 0;
-    margin-right: 10px;
-    border: none
+    margin-right: 0px;
+    border: none;
+    min-width: 100px;
 }
 
 .item-card .right-col .info-product .btn {
     font-size: 11px;
-    line-height: 44px!important;
-    height: 40px!important;
+    line-height: 48px!important;
+    height: 48px!important;
     white-space: nowrap;
     color: #366AB9;
     border: 1px solid #366AB9;
-    border-radius: 5px
 }
 
 .item-card .right-col .info-product .btn:not(.submit):hover {
@@ -2672,9 +2667,6 @@ header .search .select-wrapper .dropdown-content li span {
 
 .user-description .reviews-user {
     flex: 50%;
-    padding: 50px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    border-radius: 6px
 }
 
 .user-description .reviews-user .title {
@@ -2688,7 +2680,12 @@ header .search .select-wrapper .dropdown-content li span {
 }
 
 .user-description .reviews-user .title .clear:hover {
-    background: #2c306f
+    background: #366ab9;
+    color: #fff;
+}
+
+.collapsible {
+    border-bottom: 1px solid #ddd;
 }
 
 .user-description .reviews-user p {
@@ -2698,12 +2695,16 @@ header .search .select-wrapper .dropdown-content li span {
 }
 
 .user-description .reviews-user .title .clear {
-    border: 2px solid #afb1da;
-    border-radius: 10px;
-    color: #afb1da;
+    border: 1px solid #366ab9;
+    color: #366ab9;
     font-weight: 700;
     margin-top: -15px;
-    line-height: 37px
+    line-height: 37px;
+    margin-right: 59px;
+}
+
+.user-description .desc-user {
+    padding-bottom: 50px;
 }
 
 .user-description .desc-user .property {
@@ -6218,7 +6219,7 @@ header .select-wrapper .caret {
 }
 
 .breadcrum ul li a {
-    background: #cacef3;
+    background: #c5d6ef;
     font-weight: 500;
     font-style: normal
 }
@@ -6232,33 +6233,28 @@ header .select-wrapper .caret {
     top: 12px;
     right: -5px;
     transform: rotate(45deg);
-    background: #cacef3;
+    background: #c5d6ef;
     transition: .3s
 }
 
 .breadcrum ul li:hover:after {
-    background: #53569c
+    background: #366ab9
 }
 
 .breadcrum ul li:last-child:after {
-    background: #e3e9ff;
+    background: #366ab9;
     top: 30px;
     right: 15px
 }
 
 .breadcrum ul li span {
-    background: #e3e9ff
+    background: #366ab9;
+    color: #fff;
 }
 
 .breadcrum ul li a:hover {
     color: #fff;
-    background: #53569c
-}
-
-.item-card {
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.12);
-    border-radius: 8px;
-    padding: 30px
+    background: #366ab9
 }
 
 .greyct {
@@ -10585,7 +10581,7 @@ input[type=submit].modal-close {
 
 .tabs .tab a.active,
 .tabs .tab a:hover {
-    color: #474D9B!important
+    color: #366ab9!important
 }
 
 .search-dostavka span {
@@ -11252,11 +11248,11 @@ section h4 {
 }
 
 .oneclick {
-    background: #E4E5ED;
+    background: #dee7f5;
     border-radius: 3px;
-    color: #474D9B;
+    color: #366ab9;
     font-weight: 500;
-    border: 1px solid #E4E5ED;
+    border: 1px solid #366ab9;
     height: 47px;
     line-height: 47px;
     margin: 0px;
@@ -11267,7 +11263,7 @@ section h4 {
 }
 
 .oneclick:hover {
-    background: #5659a7;
+    background: #366ab9;
     color: #fff;
 }
 
@@ -11306,6 +11302,7 @@ section h4 {
     padding-left: 15px;
     margin-bottom: 0;
     margin-top: 10px;
+    font-size: 12px;
 }
 
 .item-card .right-col .info-product .gift {
@@ -11403,7 +11400,6 @@ section h4 {
 }
 
 .club-card {
-    padding-left: 15px;
     line-height: 14px;
 }
 
@@ -11534,10 +11530,17 @@ section h4 {
 }
 
 .express {
-    margin-bottom: 20px;
-    background: #e4e5ed;
+    margin: 20px 0;
+    background: #e6edf7;
     display: flex;
     padding: 15px;
+}
+
+.new_price {
+    font-size: 24px;
+    color: #366AB9;
+    font-weight: bold;
+    margin-left: 30px;
 }
 
 .express span {
@@ -11548,4 +11551,248 @@ section h4 {
     display: block;
     font-size: 12px;
     font-weight: 400;
+}
+
+#dropZone {
+    color: #555;
+    font-size: 14px;
+    text-align: center;
+    width: 400px;
+    padding: 50px 0;
+    margin: 50px auto;
+    float: left;
+    background: #e4e5ed
+}
+
+#dropZone.hover {
+    background: #ddd;
+    border-color: #aaa;
+}
+
+#dropZone.error {
+    background: #faa;
+    border-color: #f00;
+}
+
+#dropZone.drop {
+    background: #afa;
+    border-color: #0f0;
+}
+
+.add_review_title {
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.add_review_row {
+    display: flex;
+}
+
+.add_review_col_left {
+    flex: 30%;
+    height: 80px;
+}
+
+.add_review_col_right .rating-area {
+    float: left;
+    margin-left: -50px;
+}
+
+.add_review_col_right {
+    flex: 70%
+}
+
+.add_review_col_right textarea {
+    font-family: roboto;
+    color: #b3b3b3;
+    border: 1px solid #eaeaea;
+}
+
+.add_review_col_right label strong {
+    font-weight: 300;
+    color: #585858;
+    font-size: 12px;
+    display: block;
+}
+
+.add_review_col_right input[type="submit"] {
+    line-height: 30px!important;
+    height: 47px!important;
+    white-space: nowrap;
+    color: #fff;
+    border: 1px solid transparent;
+    background: #5659a7;
+    max-width: 300px;
+}
+
+.add_review_col_right input[type="submit"]:hover {
+    background: #2b2e79;
+}
+
+.is_buyer {
+    background: #e4e5ed;
+    border-radius: 3px;
+    display: block;
+    width: auto;
+    font-size: 12px;
+    margin-bottom: 15px;
+    padding: 2px 5px;
+    color: #71739e;
+    max-width: 130px;
+}
+
+#fine-uploader-gallery {
+    margin-bottom: 20px;
+}
+
+.add_review_row .qq-upload-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.add_review_row .qq-upload-list li.qq-upload-success {
+    background-color: #ffffff!important;
+}
+
+.add_review_row .qq-upload-list li {
+    max-width: 300px;
+    position: relative;
+}
+
+.add_review_row .qq-file-info {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.add_review_row .qq-upload-delete {
+    background-color: transparent;
+    color: #FAFAFA;
+    border-color: transparent;
+    text-shadow: 0 1px 0px rgb(0 0 0 / 55%);
+}
+
+.add_review_row .qq-btn {
+    box-shadow: 0 0 0 #000;
+    padding: 3px 5px;
+    border: none;
+    color: #fff;
+    background-color: #4a4d97;
+}
+
+.add_review_row .qq-upload-button-hover {
+    background: #5659a7;
+}
+
+.qq-upload-succes {
+    position: relative;
+}
+
+.content .add_review_row .qq-upload-button {
+    width: 100%;
+    box-sizing: border-box;
+    background: #dedede;
+    color: #919196;
+    border: 1px dashed #bfc3c3;
+    box-shadow: 0 0 0 #000;
+}
+
+.installment {
+    background: url(../images/discount.svg) no-repeat 5px center;
+    background-size: 9px;
+    padding-left: 19px;
+    font-size: 12px;
+}
+
+.installment span {
+    font-weight: 600;
+}
+
+.club_refund {
+    color: #366ab9!important;
+    font-weight: bold;
+    margin-left: 5px;
+    padding: 0px;
+    white-space: nowrap;
+}
+
+.refund {
+    padding-left: 30px;
+    align-items: center;
+    white-space: nowrap;
+    display: flex;
+    background: url(../images/refound.svg) no-repeat left center;
+    margin-bottom: 30px;
+    background-size: 24px;
+}
+
+.refund.no {
+    background: url(../images/tovar-line.svg) no-repeat left center!important;
+}
+
+.pre_antibiotic {
+    box-shadow: 0px 0px 30px rgb(0 0 0 / 11%);
+    z-index: 9999;
+    padding: 15px;
+    color: #fff;
+    font-size: 14px;
+    max-width: 225px;
+    background: #FF3541;
+}
+
+.pre_antibiotic:before {
+    content: url(../images/drug.svg);
+    float: left;
+    margin-right: 5px;
+    margin-bottom: -11px;
+}
+
+.pre_snow {
+    box-shadow: 0px 0px 30px rgb(0 0 0 / 11%);
+    padding: 15px;
+    background: #fff;
+    color: #939393;
+    font-size: 10px;
+}
+
+.pre_snow span {
+    display: block;
+    color: #4a4d97;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.pre_snow:before {
+    content: url(../images/snow.svg);
+    float: left;
+    margin-right: 5px;
+    margin-bottom: -11px;
+}
+
+.pre_recipe {
+    box-shadow: 0px 0px 30px rgb(0 0 0 / 11%);
+    padding: 15px;
+    color: #FF3541;
+    border: 1px dashed #FF3541;
+    background: #fff;
+    font-weight: 500;
+    height: 30px;
+    line-height: 35px;
+}
+
+.pre_recipe:before {
+    content: url(../images/recipe.svg);
+    float: left;
+    margin-top: -5px;
+    margin-left: -5px;
+}
+
+.bestseller {
+    border: 1px dashed #FF3541;
+    color: #FF3541;
+    background: #FFF1F1;
+    padding: 10px 20px;
+    height: 23px;
+    border-radius: 3px;
+    max-width: 96px;
 }
